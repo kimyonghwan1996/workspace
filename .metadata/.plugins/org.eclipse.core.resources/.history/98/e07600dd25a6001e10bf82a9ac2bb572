@@ -1,0 +1,20 @@
+package homework;
+
+import constructor.Compute;
+import method.Method03;
+
+public class ExamMain {
+	
+		
+	public static void main(String[] args) {
+		
+		Exam[] ar = new Exam[3];
+		for(int i = 0; i < ar.length; i++) {
+			ar[i] = new ar.display();
+		}
+		
+
+
+	}
+
+}

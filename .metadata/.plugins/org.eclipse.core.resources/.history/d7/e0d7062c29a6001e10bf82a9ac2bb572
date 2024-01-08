@@ -1,0 +1,28 @@
+package homework;
+
+import constructor.Compute;
+import method.Method03;
+
+public class ExamMain {
+	
+		
+	public static void main(String[] args) {
+		
+		Exam[] ar = new Exam[1];
+		for(int i = 0; i < ar.length; i++) {
+			ar[i] = new Exam("김용환", "11111");
+			
+			ar[i].compare();
+			for(int j = 0; j<ar[i].getOX().length ; j++ ) {
+				System.out.println(ar[i].getDap());
+			}
+			System.out.println(ar[i].getScore() );
+			
+			
+		}
+		
+
+
+	}
+
+}
