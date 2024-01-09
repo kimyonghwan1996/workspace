@@ -1,8 +1,5 @@
 package sungJuck;
 
-import java.util.Scanner;
-
-import sungjunck_sol.SungJukDTO;
 
 public class SungJuckDTO implements  Comparable<SungJuckDTO>{
     private int no;
