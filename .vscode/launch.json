@@ -6,16 +6,58 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Pratice10",
+            "name": "Memo01",
             "request": "launch",
-            "mainClass": "pratice.Pratice10",
+            "mainClass": "pratice.Memo01",
             "projectName": "pratice"
         },
         {
             "type": "java",
-            "name": "Pratice9",
+            "name": "Practice13",
             "request": "launch",
-            "mainClass": "pratice.Pratice9",
+            "mainClass": "pratice.Practice13",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "Practice12",
+            "request": "launch",
+            "mainClass": "pratice.Practice12",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "Pratice6",
+            "request": "launch",
+            "mainClass": "pratice.Pratice6",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "sacs",
+            "request": "launch",
+            "mainClass": "pratice.sacs",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "Pratice12",
+            "request": "launch",
+            "mainClass": "pratice.Pratice12",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "Pratice11",
+            "request": "launch",
+            "mainClass": "pratice.Pratice11",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
+            "name": "Pratice10",
+            "request": "launch",
+            "mainClass": "pratice.Pratice10",
             "projectName": "pratice"
         },
         {
