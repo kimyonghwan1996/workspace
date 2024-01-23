@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Practice14",
+            "request": "launch",
+            "mainClass": "pratice.Practice14",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
             "name": "Memo01",
             "request": "launch",
             "mainClass": "pratice.Memo01",
