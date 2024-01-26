@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "inf01",
+            "request": "launch",
+            "mainClass": "inf01",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "inf03",
+            "request": "launch",
+            "mainClass": "inf03",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Practice15",
+            "request": "launch",
+            "mainClass": "pratice.Practice15",
+            "projectName": "pratice"
+        },
+        {
+            "type": "java",
             "name": "Practice14",
             "request": "launch",
             "mainClass": "pratice.Practice14",
