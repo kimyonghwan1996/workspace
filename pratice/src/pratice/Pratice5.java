@@ -1,36 +1,27 @@
 package pratice;
 
-import java.util.Arrays;
+import java.util.Collections;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class Pratice5 {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] ar = new int[n];
-        //int max = Arrays.stream(ar).max().getAsInt(); //가장큰수
-
-        for(int i = 0; i < ar.length; i++){
-            ar[i] = sc.nextInt();
-        }
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>(Collections.reverseOrder());
         
-        int max = Arrays.stream(ar).max().getAsInt(); //가장큰수
-        //System.out.println(max);
-        
-        for(int i = 0; i < ar.length; i++){  
-            //System.out.print(ar[i] + " ");
-            if(ar[i] <= max) ar[i] = ar[i]*100/max;
-            //System.out.print(ar[i] + " ");
+        for (int i = 0; i < N; i++) {
+            int x = scanner.nextInt();
+            if (x == 0) {
+                if (minHeap.isEmpty()) {
+                    System.out.println(0);
+                } else {
+                    System.out.println(minHeap.poll());
+                }
+            } else {
+                minHeap.offer(x);
+            }
         }
-        
-        double sum = 0;
-        for(int i = 0; i < ar.length; i++){  
-            sum += ar[i];
-        }
-        double average = sum / ar.length;
-        System.out.println(average);
-
+        scanner.close();
     }
-
 }
