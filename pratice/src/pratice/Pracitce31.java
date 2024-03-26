@@ -1,22 +1,25 @@
 package pratice;
-import java.util.Collections;
-import java.util.PriorityQueue;
+
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
+import java.util.TreeSet;
 
 public class Pracitce31 {
         public static void main(String[] args) throws IOException {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
             int n = Integer.parseInt(br.readLine());
 
-            PriorityQueue<Integer> pq = new PriorityQueue<>();
-            PriorityQueue<Integer> reversePq =  new PriorityQueue<>(Collections.reverseOrder());
+            TreeSet<Integer> pq = new TreeSet<>();
             
             for(int i = 0; i < n; i++){
                 int m = Integer.parseInt(br.readLine());
+
                 for(int j = 0; j < m; j++){
                     StringTokenizer st = new StringTokenizer(br.readLine());
                     String str = st.nextToken();
@@ -25,29 +28,23 @@ public class Pracitce31 {
                     if ("I".equals(str)) {
                         pq.add(num);
                     } else if ("D".equals(str) && !pq.isEmpty()) {
-                        if (num == 1) {
-                            reversePq.clear();
-                            reversePq.addAll(pq);
-                            reversePq.poll(); 
-                            pq.clear();
-                            pq.addAll(reversePq);
-                              
-                        } else if (num == -1) {
-                            pq.poll();
+                        if (num == 1 ) {
+                            pq.remove(pq.last());
+                        } else if (num == -1 ) {
+                            pq.remove(pq.first());
                         }
                     }
 
                 }
                 if (pq.isEmpty()) {
                     System.out.println("EMPTY");
-                } else {
-                    reversePq.clear();
-                    reversePq.addAll(pq);
-                    System.out.println(reversePq.peek() + " " + pq.peek());
+                } 
+                else {
+                    bw.write(pq.last() + " " +pq.first() +"\n");
                 }
-
+                
             }
-        
+            bw.flush();
+            bw.close();
         }
-    
 }
